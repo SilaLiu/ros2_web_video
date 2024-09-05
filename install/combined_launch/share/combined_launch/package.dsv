@@ -1,6 +1,0 @@
-source;share/combined_launch/hook/pythonpath.ps1
-source;share/combined_launch/hook/pythonpath.dsv
-source;share/combined_launch/hook/pythonpath.sh
-source;../../build/combined_launch/share/combined_launch/hook/pythonpath_develop.ps1
-source;../../build/combined_launch/share/combined_launch/hook/pythonpath_develop.dsv
-source;../../build/combined_launch/share/combined_launch/hook/pythonpath_develop.sh

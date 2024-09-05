@@ -1,0 +1,18 @@
+# Ignore build directory
+build/
+
+# Ignore install directory
+install/
+
+# Ignore log directory
+log/
+
+# Ignore other OS-specific and common development files (optional but useful)
+.DS_Store          # macOS
+Thumbs.db          # Windows
+*.swp              # Vim temporary files
+.idea/             # IDE config (e.g. JetBrains IDEs)
+.vscode/           # Visual Studio Code settings
+*.log              # Log files
+*.tmp              # Temporary files
+*.bak              # Backup files
