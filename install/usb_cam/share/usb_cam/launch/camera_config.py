@@ -1,0 +1,1 @@
+/home/pixbus/pix/robobus/HMI/web_video_ws/src/usb_cam/launch/camera_config.py

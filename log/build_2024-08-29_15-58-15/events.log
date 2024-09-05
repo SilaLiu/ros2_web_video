@@ -1,0 +1,419 @@
+[0.000000] (-) TimerEvent: {}
+[0.000117] (combined_launch) JobQueued: {'identifier': 'combined_launch', 'dependencies': OrderedDict()}
+[0.000216] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict()}
+[0.000248] (web_video_server) JobQueued: {'identifier': 'web_video_server', 'dependencies': OrderedDict()}
+[0.000269] (combined_launch) JobStarted: {'identifier': 'combined_launch'}
+[0.006675] (usb_cam) JobStarted: {'identifier': 'usb_cam'}
+[0.011072] (web_video_server) JobStarted: {'identifier': 'web_video_server'}
+[0.099340] (-) TimerEvent: {}
+[0.199555] (-) TimerEvent: {}
+[0.299798] (-) TimerEvent: {}
+[0.400056] (-) TimerEvent: {}
+[0.410391] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'cmake'}
+[0.410716] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '/home/pixbus/pix/robobus/HMI/web_video_ws/src/usb_cam', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam'], 'cwd': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pixbus'), ('SSH_CLIENT', '192.168.10.147 61817 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('BROWSER', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pixbus'), ('CYCLONEDDS_URI', 'file:///home/pixbus/pix/scripts/ros_config/cyclonedds_config/humble_localhost.xml'), ('OLDPWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5f37f340-e8a2-4cf1-8637-82f0e9c0e94e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install:/home/pixbus/pix/robobus/HMI/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pixbus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '600'), ('FLIR_GENTL64_CTI', '/opt/spinnaker/lib/flir-gentl/FLIR_GenTL.cti'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/remote-cli:/home/pixbus/.local/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.cargo/bin:/home/pixbus/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9c7e9dff65.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('CXX', '/usr/lib/ccache/g++'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam'), ('SSH_CONNECTION', '192.168.10.147 61817 192.168.10.155 22'), ('RCUTILS_COLORIZED_OUTPUT', '0'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch:/home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/flir-gentl'), ('CMAKE_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble')]), 'shell': False}
+[0.414179] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'cmake'}
+[0.415049] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '/home/pixbus/pix/robobus/HMI/web_video_ws/src/web_video_server_ros2', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server'], 'cwd': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pixbus'), ('SSH_CLIENT', '192.168.10.147 61817 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('BROWSER', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pixbus'), ('CYCLONEDDS_URI', 'file:///home/pixbus/pix/scripts/ros_config/cyclonedds_config/humble_localhost.xml'), ('OLDPWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5f37f340-e8a2-4cf1-8637-82f0e9c0e94e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install:/home/pixbus/pix/robobus/HMI/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pixbus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '600'), ('FLIR_GENTL64_CTI', '/opt/spinnaker/lib/flir-gentl/FLIR_GenTL.cti'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/remote-cli:/home/pixbus/.local/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.cargo/bin:/home/pixbus/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9c7e9dff65.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('CXX', '/usr/lib/ccache/g++'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server'), ('SSH_CONNECTION', '192.168.10.147 61817 192.168.10.155 22'), ('RCUTILS_COLORIZED_OUTPUT', '0'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch:/home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/flir-gentl'), ('CMAKE_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble')]), 'shell': False}
+[0.467631] (usb_cam) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.471481] (web_video_server) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.500160] (-) TimerEvent: {}
+[0.529606] (usb_cam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.532542] (web_video_server) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.539662] (usb_cam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.541838] (web_video_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.599695] (web_video_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.599945] (usb_cam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.600223] (-) TimerEvent: {}
+[0.607461] (web_video_server) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/gcc - skipped\n'}
+[0.607740] (web_video_server) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.610329] (web_video_server) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.610628] (usb_cam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/gcc - skipped\n'}
+[0.610997] (usb_cam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.611565] (usb_cam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.613255] (web_video_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.614836] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.682834] (web_video_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.685085] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.690507] (web_video_server) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/g++ - skipped\n'}
+[0.690753] (web_video_server) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.691203] (web_video_server) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.693412] (web_video_server) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.695297] (usb_cam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/g++ - skipped\n'}
+[0.695708] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.696227] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.698468] (usb_cam) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.9 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.700336] (-) TimerEvent: {}
+[0.800554] (-) TimerEvent: {}
+[0.862617] (usb_cam) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.862913] (web_video_server) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.900646] (-) TimerEvent: {}
+[0.903352] (combined_launch) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch/build', '--no-deps'], 'cwd': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '0', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pixbus', 'SSH_CLIENT': '192.168.10.147 61817 22', 'LC_TIME': 'zh_CN.UTF-8', 'CCACHE_DIR': '/var/tmp/ccache', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:', 'BROWSER': '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pixbus', 'CYCLONEDDS_URI': 'file:///home/pixbus/pix/scripts/ros_config/cyclonedds_config/humble_localhost.xml', 'OLDPWD': '/home/pixbus/pix/robobus/HMI/web_video_ws/src', 'TERM_PROGRAM_VERSION': '1.86.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5f37f340-e8a2-4cf1-8637-82f0e9c0e94e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pixbus/pix/robobus/HMI/web_video_ws/install:/home/pixbus/pix/robobus/HMI/test_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pixbus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '600', 'FLIR_GENTL64_CTI': '/opt/spinnaker/lib/flir-gentl/FLIR_GenTL.cti', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/remote-cli:/home/pixbus/.local/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.cargo/bin:/home/pixbus/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-9c7e9dff65.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '27', 'AMENT_PREFIX_PATH': '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'CXX': '/usr/lib/ccache/g++', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'JAVA_HOME': '/usr/lib/jvm/java-17-openjdk-amd64', 'PWD': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch', 'SSH_CONNECTION': '192.168.10.147 61817 192.168.10.155 22', 'RCUTILS_COLORIZED_OUTPUT': '0', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages:/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch:/home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'CC': '/usr/lib/ccache/gcc', 'COLCON': '1', 'GENICAM_GENTL64_PATH': '/opt/spinnaker/lib/flir-gentl', 'CMAKE_PREFIX_PATH': '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server'}, 'shell': False}
+[0.927538] (web_video_server) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.927788] (usb_cam) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.958660] (web_video_server) StdoutLine: {'line': b'-- Found async_web_server_cpp: 2.0.0 (/opt/ros/humble/share/async_web_server_cpp/cmake)\n'}
+[1.000729] (-) TimerEvent: {}
+[1.088546] (usb_cam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.094193] (usb_cam) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.100833] (-) TimerEvent: {}
+[1.104605] (usb_cam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.112450] (web_video_server) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.74.0") found components: filesystem regex thread \n'}
+[1.116327] (web_video_server) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.119748] (usb_cam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.142735] (usb_cam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.168926] (web_video_server) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.174391] (web_video_server) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.183653] (web_video_server) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.198518] (web_video_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.200925] (-) TimerEvent: {}
+[1.219725] (web_video_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.222198] (usb_cam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.224993] (usb_cam) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.261606] (usb_cam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.273475] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.276752] (combined_launch) StdoutLine: {'line': b'running develop\n'}
+[1.277098] (combined_launch) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.277292] (combined_launch) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.301016] (-) TimerEvent: {}
+[1.364900] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.365211] (usb_cam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.401098] (-) TimerEvent: {}
+[1.459118] (usb_cam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.460416] (usb_cam) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.478343] (web_video_server) StdoutLine: {'line': b'-- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.501214] (-) TimerEvent: {}
+[1.549249] (web_video_server) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.552137] (web_video_server) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.587224] (web_video_server) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.595335] (combined_launch) StdoutLine: {'line': b'running egg_info\n'}
+[1.595559] (combined_launch) StdoutLine: {'line': b'creating combined_launch.egg-info\n'}
+[1.595873] (combined_launch) StdoutLine: {'line': b'writing combined_launch.egg-info/PKG-INFO\n'}
+[1.596103] (combined_launch) StdoutLine: {'line': b'writing dependency_links to combined_launch.egg-info/dependency_links.txt\n'}
+[1.596290] (combined_launch) StdoutLine: {'line': b'writing entry points to combined_launch.egg-info/entry_points.txt\n'}
+[1.596374] (combined_launch) StdoutLine: {'line': b'writing requirements to combined_launch.egg-info/requires.txt\n'}
+[1.596446] (combined_launch) StdoutLine: {'line': b'writing top-level names to combined_launch.egg-info/top_level.txt\n'}
+[1.598539] (web_video_server) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.599113] (combined_launch) StdoutLine: {'line': b"writing manifest file 'combined_launch.egg-info/SOURCES.txt'\n"}
+[1.599891] (combined_launch) StdoutLine: {'line': b"reading manifest file 'combined_launch.egg-info/SOURCES.txt'\n"}
+[1.600462] (combined_launch) StdoutLine: {'line': b"writing manifest file 'combined_launch.egg-info/SOURCES.txt'\n"}
+[1.601309] (-) TimerEvent: {}
+[1.601615] (combined_launch) StdoutLine: {'line': b'running build_ext\n'}
+[1.602528] (combined_launch) StdoutLine: {'line': b'Creating /home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages/combined-launch.egg-link (link to .)\n'}
+[1.603245] (combined_launch) StdoutLine: {'line': b'\n'}
+[1.603364] (combined_launch) StdoutLine: {'line': b'Installed /home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch\n'}
+[1.628830] (combined_launch) CommandEnded: {'returncode': 0}
+[1.639546] (combined_launch) JobEnded: {'identifier': 'combined_launch', 'rc': 0}
+[1.701422] (-) TimerEvent: {}
+[1.801672] (-) TimerEvent: {}
+[1.811262] (web_video_server) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[1.814928] (web_video_server) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread \n'}
+[1.820191] (web_video_server) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.820828] (web_video_server) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.834406] (web_video_server) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[1.867362] (web_video_server) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[1.880084] (web_video_server) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[1.901756] (-) TimerEvent: {}
+[1.913973] (web_video_server) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.927123] (web_video_server) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[1.957893] (web_video_server) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[1.970086] (web_video_server) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[2.001857] (-) TimerEvent: {}
+[2.026246] (usb_cam) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[2.030881] (usb_cam) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[2.031610] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[2.044293] (usb_cam) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[2.073557] (web_video_server) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.078453] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[2.093440] (usb_cam) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[2.096937] (web_video_server) StdoutLine: {'line': b'-- Generating done\n'}
+[2.101926] (-) TimerEvent: {}
+[2.102207] (web_video_server) StdoutLine: {'line': b'-- Build files have been written to: /home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server\n'}
+[2.129005] (web_video_server) CommandEnded: {'returncode': 0}
+[2.130048] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'build'}
+[2.130132] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server', '--', '-j16', '-l16'], 'cwd': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pixbus'), ('SSH_CLIENT', '192.168.10.147 61817 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('BROWSER', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pixbus'), ('CYCLONEDDS_URI', 'file:///home/pixbus/pix/scripts/ros_config/cyclonedds_config/humble_localhost.xml'), ('OLDPWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5f37f340-e8a2-4cf1-8637-82f0e9c0e94e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install:/home/pixbus/pix/robobus/HMI/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pixbus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '600'), ('FLIR_GENTL64_CTI', '/opt/spinnaker/lib/flir-gentl/FLIR_GenTL.cti'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/remote-cli:/home/pixbus/.local/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.cargo/bin:/home/pixbus/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9c7e9dff65.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('CXX', '/usr/lib/ccache/g++'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server'), ('SSH_CONNECTION', '192.168.10.147 61817 192.168.10.155 22'), ('RCUTILS_COLORIZED_OUTPUT', '0'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch:/home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/flir-gentl'), ('CMAKE_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble')]), 'shell': False}
+[2.176355] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[2.188695] (usb_cam) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[2.202023] (-) TimerEvent: {}
+[2.210526] (web_video_server) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o\x1b[0m\n'}
+[2.211217] (web_video_server) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o\x1b[0m\n'}
+[2.211420] (web_video_server) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o\x1b[0m\n'}
+[2.212260] (web_video_server) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o\x1b[0m\n'}
+[2.212499] (web_video_server) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o\x1b[0m\n'}
+[2.212744] (web_video_server) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o\x1b[0m\n'}
+[2.213643] (web_video_server) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o\x1b[0m\n'}
+[2.214117] (web_video_server) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o\x1b[0m\n'}
+[2.214468] (web_video_server) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/png_streamers.cpp.o\x1b[0m\n'}
+[2.215221] (web_video_server) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/jpeg_streamers.cpp.o\x1b[0m\n'}
+[2.251561] (usb_cam) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.272380] (web_video_server) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable web_video_server\x1b[0m\n'}
+[2.279865] (usb_cam) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[2.294210] (usb_cam) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.301008] (usb_cam) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.301298] (usb_cam) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/pixbus/pix/robobus/HMI/web_video_ws/src/usb_cam/include\n'}
+[2.301400] (usb_cam) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.302112] (-) TimerEvent: {}
+[2.307467] (usb_cam) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.307641] (usb_cam) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.309068] (usb_cam) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.311428] (usb_cam) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.312731] (usb_cam) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.319617] (usb_cam) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.319758] (usb_cam) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.320906] (usb_cam) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.326009] (usb_cam) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.371251] (usb_cam) StdoutLine: {'line': b'-- Generating done\n'}
+[2.375862] (usb_cam) StdoutLine: {'line': b'-- Build files have been written to: /home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam\n'}
+[2.386462] (usb_cam) CommandEnded: {'returncode': 0}
+[2.387241] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'build'}
+[2.387653] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam', '--', '-j16', '-l16'], 'cwd': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pixbus'), ('SSH_CLIENT', '192.168.10.147 61817 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('BROWSER', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pixbus'), ('CYCLONEDDS_URI', 'file:///home/pixbus/pix/scripts/ros_config/cyclonedds_config/humble_localhost.xml'), ('OLDPWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5f37f340-e8a2-4cf1-8637-82f0e9c0e94e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install:/home/pixbus/pix/robobus/HMI/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pixbus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '600'), ('FLIR_GENTL64_CTI', '/opt/spinnaker/lib/flir-gentl/FLIR_GenTL.cti'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/remote-cli:/home/pixbus/.local/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.cargo/bin:/home/pixbus/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9c7e9dff65.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('CXX', '/usr/lib/ccache/g++'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam'), ('SSH_CONNECTION', '192.168.10.147 61817 192.168.10.155 22'), ('RCUTILS_COLORIZED_OUTPUT', '0'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch:/home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/flir-gentl'), ('CMAKE_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble')]), 'shell': False}
+[2.402214] (-) TimerEvent: {}
+[2.443835] (usb_cam) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o\x1b[0m\n'}
+[2.444092] (usb_cam) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[2.444289] (usb_cam) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[2.444442] (usb_cam) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o\x1b[0m\n'}
+[2.502307] (-) TimerEvent: {}
+[2.602585] (-) TimerEvent: {}
+[2.702873] (-) TimerEvent: {}
+[2.803155] (-) TimerEvent: {}
+[2.903467] (-) TimerEvent: {}
+[2.911193] (web_video_server) StdoutLine: {'line': b'[100%] Built target web_video_server\n'}
+[2.924110] (web_video_server) CommandEnded: {'returncode': 0}
+[2.973550] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'install'}
+[2.984193] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server'], 'cwd': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pixbus'), ('SSH_CLIENT', '192.168.10.147 61817 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('BROWSER', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pixbus'), ('CYCLONEDDS_URI', 'file:///home/pixbus/pix/scripts/ros_config/cyclonedds_config/humble_localhost.xml'), ('OLDPWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5f37f340-e8a2-4cf1-8637-82f0e9c0e94e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install:/home/pixbus/pix/robobus/HMI/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pixbus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '600'), ('FLIR_GENTL64_CTI', '/opt/spinnaker/lib/flir-gentl/FLIR_GenTL.cti'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/remote-cli:/home/pixbus/.local/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.cargo/bin:/home/pixbus/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9c7e9dff65.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('CXX', '/usr/lib/ccache/g++'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server'), ('SSH_CONNECTION', '192.168.10.147 61817 192.168.10.155 22'), ('RCUTILS_COLORIZED_OUTPUT', '0'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch:/home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/flir-gentl'), ('CMAKE_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble')]), 'shell': False}
+[2.992195] (web_video_server) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[2.992646] (web_video_server) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.993053] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/lib/web_video_server/web_video_server\n'}
+[3.003586] (-) TimerEvent: {}
+[3.003978] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server//launch/web_video_server_launch.py\n'}
+[3.014272] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server\n'}
+[3.024237] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server\n'}
+[3.034491] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh\n'}
+[3.044049] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv\n'}
+[3.056496] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/environment/path.sh\n'}
+[3.069954] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/environment/path.dsv\n'}
+[3.083043] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/local_setup.bash\n'}
+[3.096299] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/local_setup.sh\n'}
+[3.103677] (-) TimerEvent: {}
+[3.110900] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/local_setup.zsh\n'}
+[3.122634] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/local_setup.dsv\n'}
+[3.134068] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/package.dsv\n'}
+[3.146473] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/ament_index/resource_index/packages/web_video_server\n'}
+[3.157826] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake\n'}
+[3.168387] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake\n'}
+[3.183412] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/share/web_video_server/package.xml\n'}
+[3.193467] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server\n'}
+[3.193758] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/vp9_streamer.h\n'}
+[3.193929] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/jpeg_streamers.h\n'}
+[3.194099] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/image_streamer.h\n'}
+[3.194275] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/multipart_stream.h\n'}
+[3.194451] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/h264_streamer.h\n'}
+[3.194568] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/ros_compressed_streamer.h\n'}
+[3.194697] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/vp8_streamer.h\n'}
+[3.194868] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/png_streamers.h\n'}
+[3.195099] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/web_video_server.h\n'}
+[3.195299] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server/include/web_video_server/libav_streamer.h\n'}
+[3.199153] (web_video_server) CommandEnded: {'returncode': 0}
+[3.203904] (-) TimerEvent: {}
+[3.267590] (web_video_server) JobEnded: {'identifier': 'web_video_server', 'rc': 0}
+[3.304002] (-) TimerEvent: {}
+[3.404279] (-) TimerEvent: {}
+[3.504552] (-) TimerEvent: {}
+[3.604788] (-) TimerEvent: {}
+[3.641643] (usb_cam) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[3.676951] (usb_cam) StdoutLine: {'line': b'[ 35%] Built target gtest_main\n'}
+[3.704871] (-) TimerEvent: {}
+[3.805103] (-) TimerEvent: {}
+[3.905329] (-) TimerEvent: {}
+[4.005606] (-) TimerEvent: {}
+[4.105889] (-) TimerEvent: {}
+[4.206199] (-) TimerEvent: {}
+[4.306454] (-) TimerEvent: {}
+[4.406737] (-) TimerEvent: {}
+[4.507020] (-) TimerEvent: {}
+[4.607301] (-) TimerEvent: {}
+[4.707591] (-) TimerEvent: {}
+[4.807859] (-) TimerEvent: {}
+[4.908144] (-) TimerEvent: {}
+[5.008430] (-) TimerEvent: {}
+[5.108700] (-) TimerEvent: {}
+[5.209019] (-) TimerEvent: {}
+[5.309322] (-) TimerEvent: {}
+[5.409648] (-) TimerEvent: {}
+[5.457431] (usb_cam) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libusb_cam.so\x1b[0m\n'}
+[5.509746] (-) TimerEvent: {}
+[5.610048] (-) TimerEvent: {}
+[5.664756] (usb_cam) StdoutLine: {'line': b'[ 42%] Built target usb_cam\n'}
+[5.687763] (usb_cam) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/ros2/usb_cam_node.cpp.o\x1b[0m\n'}
+[5.710160] (-) TimerEvent: {}
+[5.810434] (-) TimerEvent: {}
+[5.910699] (-) TimerEvent: {}
+[6.010956] (-) TimerEvent: {}
+[6.111190] (-) TimerEvent: {}
+[6.211484] (-) TimerEvent: {}
+[6.311747] (-) TimerEvent: {}
+[6.412011] (-) TimerEvent: {}
+[6.412220] (usb_cam) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX executable usb_cam_node_exe\x1b[0m\n'}
+[6.512103] (-) TimerEvent: {}
+[6.519898] (usb_cam) StdoutLine: {'line': b'[ 57%] Built target usb_cam_node_exe\n'}
+[6.612219] (-) TimerEvent: {}
+[6.712488] (-) TimerEvent: {}
+[6.812748] (-) TimerEvent: {}
+[6.913013] (-) TimerEvent: {}
+[7.013253] (-) TimerEvent: {}
+[7.113491] (-) TimerEvent: {}
+[7.213751] (-) TimerEvent: {}
+[7.314020] (-) TimerEvent: {}
+[7.414283] (-) TimerEvent: {}
+[7.514508] (-) TimerEvent: {}
+[7.614746] (-) TimerEvent: {}
+[7.714988] (-) TimerEvent: {}
+[7.815268] (-) TimerEvent: {}
+[7.915514] (-) TimerEvent: {}
+[8.015766] (-) TimerEvent: {}
+[8.116025] (-) TimerEvent: {}
+[8.216283] (-) TimerEvent: {}
+[8.316537] (-) TimerEvent: {}
+[8.416792] (-) TimerEvent: {}
+[8.517057] (-) TimerEvent: {}
+[8.617321] (-) TimerEvent: {}
+[8.717581] (-) TimerEvent: {}
+[8.817843] (-) TimerEvent: {}
+[8.918108] (-) TimerEvent: {}
+[9.018383] (-) TimerEvent: {}
+[9.118649] (-) TimerEvent: {}
+[9.218917] (-) TimerEvent: {}
+[9.319177] (-) TimerEvent: {}
+[9.419411] (-) TimerEvent: {}
+[9.519644] (-) TimerEvent: {}
+[9.619927] (-) TimerEvent: {}
+[9.720192] (-) TimerEvent: {}
+[9.820458] (-) TimerEvent: {}
+[9.920723] (-) TimerEvent: {}
+[10.020981] (-) TimerEvent: {}
+[10.121244] (-) TimerEvent: {}
+[10.221471] (-) TimerEvent: {}
+[10.250570] (usb_cam) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[10.291415] (usb_cam) StdoutLine: {'line': b'[ 64%] Built target gtest\n'}
+[10.312662] (usb_cam) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o\x1b[0m\n'}
+[10.312830] (usb_cam) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o\x1b[0m\n'}
+[10.321558] (-) TimerEvent: {}
+[10.421824] (-) TimerEvent: {}
+[10.522086] (-) TimerEvent: {}
+[10.622381] (-) TimerEvent: {}
+[10.722654] (-) TimerEvent: {}
+[10.822925] (-) TimerEvent: {}
+[10.923207] (-) TimerEvent: {}
+[11.023461] (-) TimerEvent: {}
+[11.123730] (-) TimerEvent: {}
+[11.223997] (-) TimerEvent: {}
+[11.324304] (-) TimerEvent: {}
+[11.424616] (-) TimerEvent: {}
+[11.524936] (-) TimerEvent: {}
+[11.625216] (-) TimerEvent: {}
+[11.725467] (-) TimerEvent: {}
+[11.825773] (-) TimerEvent: {}
+[11.926022] (-) TimerEvent: {}
+[12.026334] (-) TimerEvent: {}
+[12.106008] (usb_cam) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable test_usb_cam_utils\x1b[0m\n'}
+[12.126434] (-) TimerEvent: {}
+[12.226745] (-) TimerEvent: {}
+[12.231595] (usb_cam) StdoutLine: {'line': b'[ 85%] Built target test_usb_cam_utils\n'}
+[12.326861] (-) TimerEvent: {}
+[12.399879] (usb_cam) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable test_pixel_formats\x1b[0m\n'}
+[12.426947] (-) TimerEvent: {}
+[12.510868] (usb_cam) StdoutLine: {'line': b'[ 92%] Built target test_pixel_formats\n'}
+[12.527037] (-) TimerEvent: {}
+[12.627284] (-) TimerEvent: {}
+[12.727556] (-) TimerEvent: {}
+[12.827845] (-) TimerEvent: {}
+[12.928119] (-) TimerEvent: {}
+[13.028355] (-) TimerEvent: {}
+[13.128629] (-) TimerEvent: {}
+[13.228859] (-) TimerEvent: {}
+[13.329086] (-) TimerEvent: {}
+[13.429320] (-) TimerEvent: {}
+[13.529562] (-) TimerEvent: {}
+[13.629833] (-) TimerEvent: {}
+[13.730098] (-) TimerEvent: {}
+[13.830325] (-) TimerEvent: {}
+[13.930596] (-) TimerEvent: {}
+[14.030857] (-) TimerEvent: {}
+[14.131093] (-) TimerEvent: {}
+[14.231353] (-) TimerEvent: {}
+[14.331575] (-) TimerEvent: {}
+[14.431832] (-) TimerEvent: {}
+[14.532103] (-) TimerEvent: {}
+[14.632327] (-) TimerEvent: {}
+[14.732586] (-) TimerEvent: {}
+[14.832843] (-) TimerEvent: {}
+[14.933066] (-) TimerEvent: {}
+[15.033289] (-) TimerEvent: {}
+[15.133547] (-) TimerEvent: {}
+[15.233808] (-) TimerEvent: {}
+[15.334067] (-) TimerEvent: {}
+[15.434323] (-) TimerEvent: {}
+[15.534581] (-) TimerEvent: {}
+[15.634837] (-) TimerEvent: {}
+[15.735098] (-) TimerEvent: {}
+[15.736909] (usb_cam) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libusb_cam_node.so\x1b[0m\n'}
+[15.835208] (-) TimerEvent: {}
+[15.932563] (usb_cam) StdoutLine: {'line': b'[100%] Built target usb_cam_node\n'}
+[15.935303] (-) TimerEvent: {}
+[15.944311] (usb_cam) CommandEnded: {'returncode': 0}
+[15.984146] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'install'}
+[15.985012] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam'], 'cwd': '/home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pixbus'), ('SSH_CLIENT', '192.168.10.147 61817 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('BROWSER', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pixbus'), ('CYCLONEDDS_URI', 'file:///home/pixbus/pix/scripts/ros_config/cyclonedds_config/humble_localhost.xml'), ('OLDPWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5f37f340-e8a2-4cf1-8637-82f0e9c0e94e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install:/home/pixbus/pix/robobus/HMI/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pixbus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '600'), ('FLIR_GENTL64_CTI', '/opt/spinnaker/lib/flir-gentl/FLIR_GenTL.cti'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/remote-cli:/home/pixbus/.local/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/pixbus/pix/scripts/tools/pixmoving_ota:/home/pixbus/.cargo/bin:/home/pixbus/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin:/home/pixbus/.local/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9c7e9dff65.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('CXX', '/usr/lib/ccache/g++'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/usb_cam'), ('SSH_CONNECTION', '192.168.10.147 61817 192.168.10.155 22'), ('RCUTILS_COLORIZED_OUTPUT', '0'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/build/combined_launch:/home/pixbus/pix/robobus/HMI/web_video_ws/install/combined_launch/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/flir-gentl'), ('CMAKE_PREFIX_PATH', '/home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam:/home/pixbus/pix/robobus/HMI/test_ws/install/web_video_server:/home/pixbus/pix/robobus/HMI/web_video_ws/install/web_video_server:/opt/ros/humble')]), 'shell': False}
+[15.992770] (usb_cam) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[15.993183] (usb_cam) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.993466] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/environment/library_path.sh\n'}
+[16.002237] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/environment/library_path.dsv\n'}
+[16.010748] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib/usb_cam/usb_cam_node_exe\n'}
+[16.019464] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib/usb_cam/show_image.py\n'}
+[16.028622] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib/libusb_cam.so\n'}
+[16.035410] (-) TimerEvent: {}
+[16.037230] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib/libusb_cam_node.so\n'}
+[16.046323] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/constants.hpp\n'}
+[16.054747] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/conversions.hpp\n'}
+[16.063714] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp\n'}
+[16.072655] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/m420.hpp\n'}
+[16.081462] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/mjpeg.hpp\n'}
+[16.090393] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/mono.hpp\n'}
+[16.099023] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp\n'}
+[16.107834] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/rgb.hpp\n'}
+[16.116694] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/utils.hpp\n'}
+[16.125934] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/uyvy.hpp\n'}
+[16.134713] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/formats/yuyv.hpp\n'}
+[16.135469] (-) TimerEvent: {}
+[16.143683] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/usb_cam.hpp\n'}
+[16.152295] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/usb_cam_node.hpp\n'}
+[16.161098] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/include/usb_cam/utils.hpp\n'}
+[16.170257] (usb_cam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/lib/libusb_cam_node.so\n'}
+[16.170668] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/launch/__init__.py\n'}
+[16.179252] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/launch/__pycache__/camera_config.cpython-310.pyc\n'}
+[16.187953] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/launch/camera.launch.py\n'}
+[16.197099] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/launch/camera_config.py\n'}
+[16.205892] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/config/camera_info.yaml\n'}
+[16.214512] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/config/params_1.yaml\n'}
+[16.222989] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/config/params_2.yaml\n'}
+[16.232551] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam\n'}
+[16.235541] (-) TimerEvent: {}
+[16.241253] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam\n'}
+[16.249826] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh\n'}
+[16.258646] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv\n'}
+[16.267525] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/environment/path.sh\n'}
+[16.276052] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/environment/path.dsv\n'}
+[16.284650] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/local_setup.bash\n'}
+[16.293798] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/local_setup.sh\n'}
+[16.302515] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/local_setup.zsh\n'}
+[16.311265] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/local_setup.dsv\n'}
+[16.320704] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/package.dsv\n'}
+[16.330808] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/ament_index/resource_index/packages/usb_cam\n'}
+[16.335652] (-) TimerEvent: {}
+[16.339923] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam\n'}
+[16.348875] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.358140] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.366951] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.375715] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake\n'}
+[16.384250] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake\n'}
+[16.393311] (usb_cam) StdoutLine: {'line': b'-- Symlinking: /home/pixbus/pix/robobus/HMI/web_video_ws/install/usb_cam/share/usb_cam/package.xml\n'}
+[16.404692] (usb_cam) CommandEnded: {'returncode': 0}
+[16.435768] (-) TimerEvent: {}
+[16.458623] (usb_cam) JobEnded: {'identifier': 'usb_cam', 'rc': 0}
+[16.459246] (-) EventReactorShutdown: {}

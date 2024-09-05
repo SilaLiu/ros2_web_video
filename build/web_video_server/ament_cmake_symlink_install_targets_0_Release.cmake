@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pixbus/pix/robobus/HMI/web_video_ws/build/web_video_server/web_video_server" "TARGETS" "web_video_server" "DESTINATION" "lib/web_video_server")

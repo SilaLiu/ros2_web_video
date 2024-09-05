@@ -1,0 +1,1 @@
+/home/pixbus/pix/robobus/HMI/web_video_ws/src/usb_cam/include/usb_cam/formats/mjpeg.hpp
